@@ -1,0 +1,12 @@
+
+version: '3.1'
+services:
+  nginx:
+    image: bhardwaj21/nginx-custom:v9.0.0
+    deploy:
+      replicas: 3
+      mode: replicated
+    ports:
+      - "7000:80"
+    
+
